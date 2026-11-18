@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A little garden, a long apology, and a heart that still chooses you.">
+  <meta name="theme-color" content="#fdf2ee">
+  <title>MIAU</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23f25373' d='M32 56C18 45 6 34 6 22 6 13 13 7 21 7c5 0 9 3 11 7 2-4 6-7 11-7 8 0 15 6 15 15 0 12-12 23-26 34z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Outfit:wght@300..800&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#letter">Skip to the letter</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ✦ the gift ✦ -->
+  <div class="intro" id="intro" aria-label="A gift is waiting for you">
+    <div class="intro-stars" aria-hidden="true"></div>
+
+    <div class="intro-scene">
+      <button class="gift" id="openGift" type="button" aria-label="Tap to open your gift">
+        <span class="gift-halo" aria-hidden="true"></span>
+        <span class="gift-body" aria-hidden="true">
+          <span class="ribbon ribbon-v"></span>
+          <span class="ribbon ribbon-h"></span>
+        </span>
+        <span class="gift-shine" aria-hidden="true"></span>
+        <span class="gift-lid" aria-hidden="true">
+          <span class="bow">
+            <span class="loop loop-l"></span>
+            <span class="loop loop-r"></span>
+            <span class="bow-tail bow-tail-l"></span>
+            <span class="bow-tail bow-tail-r"></span>
+            <span class="knot"></span>
+          </span>
+        </span>
+      </button>
+
+      <p class="tap-line"><span class="mini-star" aria-hidden="true">✧</span>tap to open<span class="mini-star" aria-hidden="true">✧</span></p>
+      <p class="intro-sub">a little something, made with love</p>
+    </div>
+  </div>
+
+  <!-- ✦ music ✦ -->
+  <div class="player-wrap">
+    <button class="music-pill" id="musicToggle" type="button" aria-expanded="false" aria-controls="musicPanel" aria-label="Open our song, Ikaw at Ako by Johnoy Danao">
+      <span class="music-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M9 18.2V5.4l10-2v12.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="6.6" cy="18.2" r="2.4" fill="currentColor"/>
+          <circle cx="16.6" cy="15.5" r="2.4" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="music-label">Ikaw at Ako <span class="music-artist">— Johnoy Danao</span></span>
+      <span class="music-chevron" aria-hidden="true">
+        <svg viewBox="0 0 12 12" fill="none">
+          <path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </button>
+
+    <div class="music-panel" id="musicPanel" role="group" aria-label="Our song" aria-hidden="true" inert>
+      <div class="music-video" id="musicVideo">
+        <a class="music-fallback" href="https://music.youtube.com/watch?v=l5ta60yfryc&amp;si=bsgqOrME0HSSoDwj" target="_blank" rel="noopener" aria-label="Play Ikaw at Ako in YouTube Music">
+          <span class="music-fallback-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9 6.6v10.8L18.5 12 9 6.6Z" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="music-fallback-copy">play it on<br>YouTube Music</span>
+        </a>
+        <div class="music-loading" id="musicLoading" aria-hidden="true">loading our song…</div>
+      </div>
+
+      <div class="music-panel-foot">
+        <span class="music-hint" aria-live="polite">our song · press play</span>
+        <a class="music-open" href="https://music.youtube.com/watch?v=l5ta60yfryc&amp;si=bsgqOrME0HSSoDwj" target="_blank" rel="noopener" aria-label="Open Ikaw at Ako in YouTube Music">YouTube Music <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ✦ hero ✦ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <span class="deco heart-a" aria-hidden="true">💗</span>
+      <span class="deco sparkle-a" aria-hidden="true">✨</span>
+      <span class="deco flower-a" aria-hidden="true">🌸</span>
+      <span class="deco heart-b" aria-hidden="true">💗</span>
+      <span class="deco flower-b" aria-hidden="true">🌷</span>
+
+      <div class="hero-inner">
+        <h1 id="hero-title" class="hero-reveal" style="--d: .05s"><span class="grad">HAPPYY MONTHSARRY.</span></h1>
+        <p class="hero-quote hero-reveal" style="--d: .22s">“1 YEAR AND 7 MONTHS TO BE EXACT”</p>
+        <span class="hero-rule hero-reveal" style="--d: .38s" aria-hidden="true"></span>
+        <a class="scroll-cue hero-cue hero-reveal" style="--d: .52s" href="#letter">scroll to discover <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- ✦ letter ✦ -->
+    <section class="letter-band" id="letter" aria-labelledby="letter-title">
+      <article class="letter-card reveal">
+        <p class="script">straight from my heart</p>
+        <h2 class="letter-title" id="letter-title">Nineteen Months, <span class="grad">Lifetime to Go</span></h2>
+
+        <div class="letter-body">
+          <p>Haiai baby, happy 19 months together 🤯 I can't believe we've made it this far, and yet, here we are, still choosing each other every single day. 19 months of love, laughter, memories, little arguments, tampuhan, and countless moments that I'll forever treasure.</p>
+          <p>I just want you to know how grateful I am to have you in my life. Thank you for staying, for understanding me, for loving me even during the times when I'm not the easiest person to deal with. I know we're not perfect, and we may have our ups and downs, but I hope you know that my love for you never changes.</p>
+          <p>Every month with you gives me another reason to fall in love with you all over again. I look forward to making more memories, experiencing new things, and growing together with you. I don't know what the future holds for us, but one thing I'm certain of is that I want you to be part of it</p>
+          <p>19 months down, and many more to go, baby. I still choose you, today, tomorrow, and in every lifetime. I love you so much, my love. Happy monthsary</p>
+        </div>
+
+        <p class="letter-signature">yours, still. always 💌</p>
+        <a class="scroll-cue letter-cue" href="#regrets">keep scrolling down <span class="arrow" aria-hidden="true">↓</span></a>
+      </article>
+    </section>
+
+    <!-- ✦ why I'm sorry ✦ -->
+    <section class="regrets" id="regrets" aria-labelledby="regrets-title">
+      <div class="regrets-inner">
+        <div class="section-head reveal">
+          <p class="script">things I genuinely regret</p>
+          <h2 id="regrets-title">Why I’m Sorry</h2>
+          <span class="rule short" aria-hidden="true"></span>
+        </div>
+
+        <div class="regret-grid">
+          <article class="regret-card reveal" style="--i: 0">
+            <span class="card-emoji" aria-hidden="true">🌷</span>
+            <h3>You Make Me Happy</h3>
+            <p>I hope you know how happy you make me, baby. Even on days when nothing special happens, having you around is already enough to make my day better.</p>
+          </article>
+          <article class="regret-card reveal" style="--i: 1">
+            <span class="card-emoji" aria-hidden="true">🙇</span>
+            <h3>You're My Favorite Person</h3>
+            <p>YYou're still the first person I wanna talk to whenever something happens, whether it's something important or just random things. I love sharing little parts of my day with you.</p>
+          </article>
+          <article class="regret-card reveal" style="--i: 2">
+            <span class="card-emoji" aria-hidden="true">🌺</span>
+            <h3>I Feel Lucky to Have You</h3>
+            <p>Sometimes I wonder how I got so lucky to have someone like you. I'm really thankful that I get to love you and be loved by you.</p>
+          </article>
+          <article class="regret-card reveal" style="--i: 3">
+            <span class="card-emoji" aria-hidden="true">✨</span>
+            <h3>Our Little Memories</h3>
+            <p>I love looking back at all the memories we've made. Even the simplest and most random moments mean a lot to me because I got to experience them with you.</p>
+          </article>
+          <article class="regret-card reveal" style="--i: 4">
+            <span class="card-emoji" aria-hidden="true">🌸</span>
+            <h3>Let's Keep Growing Together</h3>
+            <p>I know we still have a lot to learn, and we're not always going to get everything right. But I hope we continue to understand each other, grow together, and never stop trying.</p>
+          </article>
+          <article class="regret-card reveal" style="--i: 5">
+            <span class="card-emoji" aria-hidden="true">💗</span>
+            <h3>It's Still You</h3>
+            <p>After these 19 months, it's still you, baby. I still want to make more memories with you, spend more time with you, and experience everything life has waiting for us. I hope we get to celebrate many more monthsaries together.</p>
+          </article>
+        </div>
+
+        <a class="scroll-cue regrets-cue reveal" href="#garden">step into my secret garden <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- ✦ garden ✦ -->
+    <section class="garden" id="garden" aria-labelledby="garden-title">
+      <div class="garden-inner">
+        <div class="section-head reveal">
+          <p class="script">our garden</p>
+          <h2 id="garden-title">A Garden Grown Just For You</h2>
+          <span class="rule short" aria-hidden="true"></span>
+        </div>
+
+        <div class="roses" role="group" aria-label="Four roses. Hover over or tap each one.">
+          <button class="rose reveal" style="--i: 0" type="button" aria-expanded="false" aria-label="Rose one: for the way your laugh fills a room">
+            <span class="rose-glow" aria-hidden="true"></span>
+            <span class="rose-note" aria-hidden="true">for the way<br>your laugh fills a room</span>
+            <span class="rose-bloom" aria-hidden="true">🌹</span>
+            <span class="rose-stem" aria-hidden="true"></span>
+          </button>
+          <button class="rose reveal" style="--i: 1" type="button" aria-expanded="false" aria-label="Rose two: for the patience you give me">
+            <span class="rose-glow" aria-hidden="true"></span>
+            <span class="rose-note" aria-hidden="true">for the patience<br>you give me</span>
+            <span class="rose-bloom" aria-hidden="true">🌹</span>
+            <span class="rose-stem" aria-hidden="true"></span>
+          </button>
+          <button class="rose reveal" style="--i: 2" type="button" aria-expanded="false" aria-label="Rose three: for making anywhere feel like home">
+            <span class="rose-glow" aria-hidden="true"></span>
+            <span class="rose-note" aria-hidden="true">for making anywhere<br>feel like home</span>
+            <span class="rose-bloom" aria-hidden="true">🌹</span>
+            <span class="rose-stem" aria-hidden="true"></span>
+          </button>
+          <button class="rose reveal" style="--i: 3" type="button" aria-expanded="false" aria-label="Rose four: for still being here">
+            <span class="rose-glow" aria-hidden="true"></span>
+            <span class="rose-note" aria-hidden="true">for still being here,<br>reading all of this</span>
+            <span class="rose-bloom" aria-hidden="true">🌹</span>
+            <span class="rose-stem" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <p class="garden-quote reveal">“These four roses are just like candles in the dark. Even if one were to fade away, the others will keep burning with endless devotion, making sure our light never dies.”</p>
+        <p class="garden-hint reveal"><span class="spark" aria-hidden="true">✦</span> <span class="hint-text">hover each rose to feel its warmth</span> <span class="spark" aria-hidden="true">✦</span></p>
+
+        <a class="scroll-cue garden-cue reveal" href="#memories">see my favorite views <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <!-- ✦ favorite views ✦ -->
+    <section class="memories" id="memories" aria-labelledby="memories-title">
+      <div class="section-head reveal">
+        <p class="script">our gallery </p>
+        <h2 id="memories-title"><span></span> <span class="grad">Us Against The World</span></h2>
+        <span class="rule short" aria-hidden="true"></span>
+      </div>
+
+      <div class="polaroids">
+        <figure class="polaroid reveal" style="--i: 0">
+          <div class="polaroid-photo">
+            <img src="2.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="A quiet memory beneath the trees at night">
+          </div>
+          <figcaption>favorite</figcaption>
+        </figure>
+        <figure class="polaroid reveal" style="--i: 1">
+          <div class="polaroid-photo">
+            <img src="1.jpg" width="900" height="1200" loading="lazy" decoding="async" alt="A garden memory, held close">
+          </div>
+          <figcaption>person</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ✦ finale ✦ -->
+    <section class="finale" id="finale" aria-labelledby="finale-title">
+      <div class="finale-inner">
+        <p class="flower-row reveal" aria-hidden="true"><span>🌸</span><span>🌹</span><span>🌷</span><span>🌺</span></p>
+        <p class="script reveal">mwaaaaah</p>
+        <h2 id="finale-title" class="reveal">broh,<br>i love you</h2>
+        <p class="finale-copy reveal">heres a little Usagi giving you so much love</p>
+
+        <div class="heart-stage reveal" aria-hidden="true">
+          <img class="heart-art" src="assets/photos/usagi-love.png" width="402" height="350" loading="lazy" decoding="async" alt="">
+        </div>
+
+        <p class="finale-sign reveal">🌸</p>
+
+        <footer class="site-footer">
+          <span>yoGab<  /span>
+          <span class="tiny-heart" aria-hidden="true">♥</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
